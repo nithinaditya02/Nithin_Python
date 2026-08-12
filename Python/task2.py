@@ -71,11 +71,22 @@ if pin == correct_pin:
         amount = int(input("Enter the amount to deposit: "))
 
         if amount <= 0:
-            print("Invalid amount. Please enter a positive amount.")
+            print("Invalid amount. Please enter a positive amount.")1234
         else:
             balance = balance + amount
             print(f"Deposit successful. Your new balance is: {balance}")
 
+    elif choice == 4:
+        account_number=int(input("Enter the account number to transfer money:"))
+        transfer_amount=int(input("Enter the amount to transfer:"))
+        if transfer_amount > balance:
+            print("Insufficient balance for transfer.")
+        else:
+            balance = balance-transfer_amount
+            print(f"Transfer of {transfer_amount} to account {account_number} successful.")
+
+    elif choice == 5:
+            print("Thank you for using the ATM.")
     else:
         print("Invalid choice")
 
