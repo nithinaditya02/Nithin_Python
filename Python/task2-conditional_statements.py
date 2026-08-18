@@ -37,7 +37,7 @@
 
 
 
-#TASK - ATM Simulator 1234
+#TASK - ATM Simulator 
 correct_pin = 1234
 balance = 10000
 
@@ -71,7 +71,7 @@ if pin == correct_pin:
         amount = int(input("Enter the amount to deposit: "))
 
         if amount <= 0:
-            print("Invalid amount. Please enter a positive amount.")1234
+            print("Invalid amount. Please enter a positive amount.")
         else:
             balance = balance + amount
             print(f"Deposit successful. Your new balance is: {balance}")
